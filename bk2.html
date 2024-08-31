@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baklu | Home</title>
+    <link rel="stylesheet" href="bk2.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="announcement">Till now total 4,86,847 questions have been solved!</div>
+            <button class="theme-toggle" id="theme-toggle">🌙</button>
+        </div>
+    </header>
+
+    <nav class="side-nav" id="side-nav">
+        <ul class="navbar" id="navbar">
+            <li><a href="#">Information</a></li>
+            <li><a href="#">Practice</a></li>
+            <li><a href="#">Test</a></li>
+            <li><a href="#">Boards</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Downloads</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <div class="hero">
+            <h1>Welcome to Baklu!</h1>
+            <p>Your one-stop platform for educational resources, practice questions, and more.</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+
+        <main>
+            <section class="section">
+                <h2>Study Notes</h2>
+                <ul>
+                    <li>Topic-wise all formulas and trick-tables are available.</li>
+                    <li>Topic-wise teaching notes for Physics, Chemistry, and Math.</li>
+                    <li>Topic-wise important concepts and tricks for Physics, Chemistry, and Math.</li>
+                    <li>Topic-wise handwritten notes available for Physics, Chemistry, Math, and Biology.</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Questions Practice</h2>
+                <ul>
+                    <li>Topic-wise and level-wise practice questions for Physics, Chemistry, Math, and Biology.</li>
+                    <li>Paperwise and topic-wise previous year questions from JEE-main, JEE-advanced, and NEET.</li>
+                    <li>Response for each question is saved for the next session.</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Tests</h2>
+                <ul>
+                    <li>Topic-wise and level-wise test papers for Physics, Chemistry, Math, and Biology.</li>
+                    <li>Paperwise and topic-wise previous year test papers from JEE-main, JEE-advanced, and NEET.</li>
+                    <li>Create and share test papers from our 80,000 questions database.</li>
+                    <li>Performance chart and graph for individual and group tests.</li>
+                    <li>Test performance auto-saved for future use.</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Board Exam</h2>
+                <ul>
+                    <li>Topic-wise and level-wise practice questions.</li>
+                    <li>Paperwise and topic-wise previous year questions.</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Services</h2>
+                <ul>
+                    <li>Institutes can share their services on the website.</li>
+                    <li>Institutes can share their faculty requirements.</li>
+                    <li>Faculties can search for available jobs and apply.</li>
+                    <li>Students can talk to IITians and get their valuable suggestions.</li>
+                    <li>All India Test Series.</li>
+                    <li>All India Scholarship Test.</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Baklu. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle side menu
+            document.getElementById('menu-toggle').addEventListener('click', function() {
+                const sideNav = document.getElementById('side-nav');
+                sideNav.classList.toggle('active');
+            });
+
+            // Toggle dark mode
+            const themeToggleButton = document.getElementById('theme-toggle');
+            themeToggleButton.addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+                themeToggleButton.textContent = document.body.classList.contains('dark-mode') ? '🌞' : '🌙';
+            });
+        });
+    </script>
+
+</body>
+</html>
